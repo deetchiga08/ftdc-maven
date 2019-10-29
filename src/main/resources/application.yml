@@ -1,0 +1,36 @@
+# ==========================================
+# ===           DEFAULT VALUES           ===
+# ==========================================
+
+server:
+  profiles: development
+
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5433/ftdc?createDatabaseIfNotExist=true
+      username: postgres
+      password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+         hibernate:
+               jdbc:
+                lob:
+                 non_contextual_creation: true
+  jackson:
+    default-property-inclusion: non_null
+
+briller:
+  jwt:
+    secret: brillersys
+    expiration: 604800
+    token:
+      header: X-Auth-Token
+      secret: sssshhhh!
+  user:
+      root: users
+      verification: false
+  secret: brillersys
+
+
