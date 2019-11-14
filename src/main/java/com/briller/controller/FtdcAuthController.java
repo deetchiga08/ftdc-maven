@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-@Api("Authentication Service for FTDC Questionaire Application")
+@Api("Authentication Service for FTDC Questionaire Application for ipad api")
 @RestController
 @RequestMapping("api/services/auth")
 public class FtdcAuthController {
